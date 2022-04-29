@@ -1,0 +1,124 @@
+*{
+    box-sizing:border-box ;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    border: 10px;
+    
+}
+
+header{
+    background-color: rgb(35, 135, 168);
+    padding: 10px;
+    margin-bottom: 15px;
+    font-family: cursive;
+    color: white;
+    outline:black;
+    
+}
+
+footer{
+    background-color: rgb(35, 135, 168);
+    text-align: center;
+    padding: 30px;
+    font-family: cursive;
+    color: white;
+
+}
+
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: cursive;
+    align-items: center;
+
+}
+
+.text{
+   padding: 30px; 
+   width: 50%;
+   align-items: center;
+}
+
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 25px;
+}
+
+.element{
+    text-align: center;
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:  rgb(35, 135, 168);
+}
+
+button{
+    background-color: white;
+    color: black;
+    border: black solid 2px;
+    padding: 5px 10px;
+    border-radius: 50px;
+
+}
+
+button:hover{
+    background-color:blue;
+    color: white;
+    border: white solid 1px;
+
+}
+
+button a{
+    text-decoration: none;
+    color: inherit;
+
+}
+
+@media(max-width:800px){
+
+}
+@media(max-width:500px){
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    
+
+    }
+    button{
+        width: 40%;
+        margin: 1% 0;
+    }
+    .top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .top div{
+        width: 90%;
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-around ;
+
+    }
+    .row div{
+        width:40%;
+        margin: 4%,0;
+    }
+    .top .text{
+        align-items: center;
+    }
+}
